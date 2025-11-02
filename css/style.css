@@ -111,6 +111,120 @@ body {
 /*---------- navbar style end-------------  */
 
 
+/* hero-slider-start */
+/* 🌈 Ensure all slides have same height */
+
+.hero-slider img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent navy tone */
+  z-index: 1;
+}
+
+/* 🎯 Caption styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+  color: #f8f8f8;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* 🌟 Button styles */
+.btn {
+  padding: 10px 45px;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-warning {
+  background-color: #ffd700;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-coral {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-teal {
+  background-color: #20b2aa;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-warning:hover{
+  background-color: #e6c200;
+  color: #fff;
+}
+
+.btn-coral:hover{
+  background-color: #ff4c3b;
+  color: #fff;
+}
+
+.btn-teal:hover{
+  background-color: #008080;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* 📱 Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-slider img {
+    height: 60vh;
+  }
+  .carousel-caption {
+    padding: 10px 15px;
+  }
+  .carousel-caption h2 {
+    font-size: 1.6rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+/* hero-slider-end */
 
 
 
