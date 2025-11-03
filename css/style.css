@@ -273,8 +273,60 @@ body {
 .category-item:hover p{
   color: black !important;
 }
+
+
 /* category shop end  */
 
+
+/* age shop start  */
+.shop-by-age {
+  background-color: #fdfaf8; /* soft off-white */
+}
+
+.shop-by-age h2 {
+  color: #2c3e50;
+}
+
+.age-card {
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.age-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.age-card .image-wrapper {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.age-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Button Style */
+.btn-age {
+  background-color: #ff6f61; /* coral */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 6px 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-age:hover {
+  background-color: #009688; /* teal */
+  color: #fff;
+}
+
+/* age shop end  */
 
 
 /*  Responsive Fixes */
