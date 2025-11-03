@@ -328,6 +328,28 @@ body {
 
 /* age shop end  */
 
+/* bridge section start  */
+.promo-banner {
+  background: url('/images/promo.jpg') center/cover no-repeat;
+  position: relative;
+  height: 300px;
+}
+
+.promo-banner .promo-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.promo-banner h2 {
+  color: #fff;
+}
+
+.promo-banner p {
+  color: #f8f8f8;
+}
+
+/* bridge section end  */
 
 /*  Responsive Fixes */
 /* 📱 Responsive Layout for Small Screens */
