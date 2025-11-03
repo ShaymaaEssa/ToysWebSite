@@ -14,6 +14,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.border-dashed{
+  border-style: dashed !important;
+}
 /*  Mini Navbar Styles */
 
 .mini-navbar {
@@ -226,7 +229,51 @@ body {
 
 /* hero-slider-end */
 
+/* category shop start  */
+.category-shop h2{
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2.1em;
+}
+.category-item {
+  height: 100%;
+  cursor: pointer;
+}
 
+ .category-item, .category-item img, .category-item p {
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover{
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.category-item:hover img {
+  transform: scale(1.09);
+  border-radius: 20px;
+  
+}
+
+.category-item .image-wrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.category-item img{
+  height: 100%;
+}
+.category-item p {
+  color: gray !important;
+}
+
+.category-item:hover p{
+  color: black !important;
+}
+/* category shop end  */
 
 
 

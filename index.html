@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Baloo+2:wght@400..800&display=swap"
       rel="stylesheet"
     />
 
@@ -193,22 +193,109 @@
     <!-- Category Shop start -->
 
     <section class="category-shop py-5">
-        <div class="container">
-            <h2 class="text-center">Category Shopping</h2>
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Shop by Category</h2>
 
-            <div class="row">
-              <div class="col-12 col-md-4 col-lg-3">
-                <div class="category-item">
-                  <div class="img rounded-5 m-4 border-2 border">
-                    <img src="/images/category/cat1.jpg"  alt="Category 1" class="img-fluid" />
-                  </div>
-                  <p class="text-center mt-3">Educational Toys</p>
+    <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat1.jpg" class="img-fluid rounded-3" alt="Educational Toys" />
                 </div>
+                <p class="fw-semibold fs-6">Educational Toys</p>
               </div>
-
             </div>
+
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat2.jpg" class="img-fluid rounded-3" alt="Vehicles Toys" />
+                </div>
+                <p class="fw-semibold fs-6">Vehicles Toys</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat3.jpg" class="img-fluid rounded-3" alt="Stuffed Animals" />
+                </div>
+                <p class="fw-semibold fs-6">Stuffed Animals</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat4.jpg" class="img-fluid rounded-3" alt="Building Sets" />
+                </div>
+                <p class="fw-semibold fs-6">Building Sets</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat5.jpg" class="img-fluid rounded-3" alt="Outdoor Toys" />
+                </div>
+                <p class="fw-semibold fs-6">Outdoor Toys</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat6.jpg" class="img-fluid rounded-3" alt="Puzzles" />
+                </div>
+                <p class="fw-semibold fs-6">Puzzles</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat7.jpg" class="img-fluid rounded-3" alt="Creative Kits" />
+                </div>
+                <p class="fw-semibold fs-6">Creative Kits</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="category-item text-center shadow-sm p-3 rounded-4">
+                <div class="image-wrapper mb-3">
+                  <img src="/images/category/cat8.jpg" class="img-fluid rounded-3" alt="Board Games" />
+                </div>
+                <p class="fw-semibold fs-6">Board Games</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
      <!-- Category Shop End  -->
 
     <script src="js/bootstrap.js"></script>
