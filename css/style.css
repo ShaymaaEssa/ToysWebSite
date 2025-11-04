@@ -385,6 +385,50 @@ section h2{
 /* Bridge Section End */
 
 
+/* about section start  */
+
+.about-us img {
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.about-us .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.about-us .image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ffd54f; /* playful yellow border */
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.about-us img:hover {
+  transform: scale(1.03);
+}
+
+.about-us img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-us img:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* about section end  */
+
+
+
+
 /*  Responsive Fixes */
 /* 📱 Responsive Layout for Small Screens */
 @media (max-width: 768px) {
