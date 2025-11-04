@@ -429,6 +429,14 @@ section h2{
 /* blog section start   */
 .blog-section .card{
   overflow: hidden;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
 }
 
 .blog-section img {
@@ -442,6 +450,19 @@ section h2{
   transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
+
+.btn.bg-success-subtle:hover {
+  background-color: #4CAF50;
+  color: white;
+  transition: 0.3s ease;
+}
+
+
+.blog-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
 /* blog section end  */
 
 
