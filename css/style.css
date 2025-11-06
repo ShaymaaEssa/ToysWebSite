@@ -426,6 +426,106 @@ section h2{
 
 /* about section end  */
 
+
+/* shop section start  */
+/* Shop Section Styling */
+.shop-section {
+  background-color: #f8f9fa; /* light background for contrast */
+}
+
+.shop-section h2 {
+  color: #1A3E72; /* your deep blue theme color */
+}
+
+/* Card Styling */
+.shop-section .card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect — lift the card slightly */
+.shop-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+
+.shop-section .img-wrapper {
+  height: 330px;
+  overflow: hidden;
+  border-bottom: 4px solid #2ECC71; /* a fresh green accent */
+}
+
+
+
+.shop-section .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom effect on hover */
+.shop-section .card:hover img {
+  transform: scale(1.08);
+}
+
+
+.img .layer {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(117, 123, 131, 0.6); /* deep blue with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  border-radius: 1rem;
+  backdrop-filter: none; /* prevents icon blur */
+}
+
+/* Hover: move overlay up and zoom image */
+.img:hover .layer {
+  bottom: 0;
+}
+
+
+/* Product Title */
+.shop-section .card-title {
+  color: #1A3E72;
+  font-size: 1.1rem;
+}
+
+/* Price Styling */
+.shop-section .fw-bold.text-success {
+  color: #E74C3C !important; /* use coral/red accent for price */
+}
+
+/* Button Styling */
+.shop-section .btn {
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  background-color: #2ECC71;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.shop-section .btn:hover {
+  background-color: #28b463;
+  transform: scale(1.05);
+}
+/* shop section end  */
+
+
+
 /* blog section start   */
 .blog-section .card{
   overflow: hidden;
