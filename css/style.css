@@ -19,10 +19,26 @@ section h2{
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 2.1em;
+  text-align: center !important;
+  color: #FF7043 !important;
 }
 
 .border-dashed{
   border-style: dashed !important;
+}
+
+.btn-primary {
+  background-color: #009688 !important; /* teal */
+  border: none;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00796B !important; /* slightly darker teal */
+  transform: scale(1.05);
 }
 /*  Mini Navbar Styles */
 
@@ -314,8 +330,7 @@ section h2{
 
 /* Button Style */
 .btn-age {
-  background-color: #ff6f61; /* coral */
-  color: #fff;
+
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -323,10 +338,6 @@ section h2{
   transition: all 0.3s ease;
 }
 
-.btn-age:hover {
-  background-color: #009688; /* teal */
-  color: #fff;
-}
 
 /* age shop end  */
 
@@ -428,14 +439,11 @@ section h2{
 
 
 /* shop section start  */
-/* Shop Section Styling */
+
 .shop-section {
   background-color: #f8f9fa; /* light background for contrast */
 }
 
-.shop-section h2 {
-  color: #1A3E72; /* your deep blue theme color */
-}
 
 /* Card Styling */
 .shop-section .card {
@@ -458,7 +466,7 @@ section h2{
 .shop-section .img-wrapper {
   height: 330px;
   overflow: hidden;
-  border-bottom: 4px solid #2ECC71; /* a fresh green accent */
+  border-bottom: 4px solid var(--yellow); /* a fresh green accent */
 }
 
 
@@ -475,6 +483,29 @@ section h2{
   transform: scale(1.08);
 }
 
+/* overlay background only */
+.overlay-bg {
+  background: rgba(117, 123, 131, 0.6);
+  bottom: -100%;
+  transition: all 0.5s ease;
+}
+
+/* show the overlay on hover */
+.img:hover .overlay-bg {
+  bottom: 0;
+}
+
+/* icons layer (solid white) */
+.icons {
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 10; /* keep icons above overlay */
+}
+
+.img:hover .icons {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
 
 .img .layer {
   position: absolute;
@@ -489,6 +520,8 @@ section h2{
   transition: all 0.5s ease;
   border-radius: 1rem;
   backdrop-filter: none; /* prevents icon blur */
+  isolation: isolate;
+  z-index: 1;
 }
 
 /* Hover: move overlay up and zoom image */
@@ -496,30 +529,53 @@ section h2{
   bottom: 0;
 }
 
+/* Icon styling */
+.shop-section .icons .cart,
+.shop-section .icons .heart,
+.shop-section .icons .share {
+  width: 50px;
+  height: 50px;
+  background: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #009688 !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+/* Hover on icons */
+.icons div:hover {
+  transform: scale(1.1);
+}
 
 /* Product Title */
 .shop-section .card-title {
   color: #1A3E72;
   font-size: 1.1rem;
+  font-family: "Baloo 2", sans-serif;
 }
 
 /* Price Styling */
 .shop-section .fw-bold.text-success {
-  color: #E74C3C !important; /* use coral/red accent for price */
+  color: #468bb9 !important; /* use coral/red accent for price */
 }
 
 /* Button Styling */
 .shop-section .btn {
   border: none;
-  border-radius: 25px;
+  border-radius: 10px;
   font-weight: 600;
-  background-color: #2ECC71;
+  background-color: #fc978e;
   color: white;
   transition: all 0.3s ease;
 }
 
 .shop-section .btn:hover {
-  background-color: #28b463;
+  background-color: var(--coral);
   transform: scale(1.05);
 }
 /* shop section end  */
@@ -565,8 +621,121 @@ section h2{
 
 /* blog section end  */
 
+/* contact section start */
+.contact-section {
+  background: linear-gradient(180deg, #F8F8F8 0%, #fdfdfd 100%);
+  position: relative;
+  overflow: hidden;
+}
 
 
+.contact-form,
+.contact-info {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-form:hover,
+.contact-info:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating decorative circles (for childlike feel) */
+.contact-section::before,
+.contact-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+.contact-section::before {
+  width: 120px;
+  height: 120px;
+  background: #FFD54F; /* soft yellow */
+  top: 10%;
+  left: 5%;
+}
+
+.contact-section::after {
+  width: 100px;
+  height: 100px;
+  background: #81C784; /* light green */
+  bottom: 10%;
+  right: 8%;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+/* contact section end  */
+
+/* footer start  */
+/* Footer Section */
+.footer {
+  background-color: #FFF8F5; /* soft off-white with coral tint */
+  color: #333;
+  border-top: 4px solid #FF7043; /* coral accent */
+}
+
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Baloo 2", sans-serif;
+}
+
+/* Colors */
+.text-coral {
+  color: #FF7043;
+}
+.btn-teal {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+}
+.btn-teal:hover {
+  background-color: #00796B;
+}
+
+/* Links */
+.footer-link {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: #009688; /* teal hover */
+}
+
+/* Social icons */
+.social-icons a {
+  color: #FF7043;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  color: #FFD54F; /* yellow hover */
+  transform: translateY(-3px);
+}
+
+/* Newsletter input */
+.footer .form-control {
+  border: 1px solid #ddd;
+}
+.footer .form-control:focus {
+  border-color: #009688;
+  box-shadow: none;
+}
+
+/* footer end  */
 
 /*  Responsive Fixes */
 /* 📱 Responsive Layout for Small Screens */
